@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Inter";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    background-color: #222;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    max-width: 550px;
+    height: 90vh;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #555;
+    overflow: hidden;
+
+    > h1 {
+        margin-bottom: 1rem;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    > h2 {
+        color: rgb(25, 212, 94);
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .users-list {
+        margin-top: 1rem;
+        gap: 1rem;
+        overflow: scroll;
+        
+
+        .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background-color: #a4a4a4;
+            border-radius: 5px;
+
+            .user-info {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                font-weight: bolder;
+            }
+
+            i {
+                font-size: 2rem;
+                margin-right: 2rem;
+            }
+
+            i:hover {
+                color: red;
+            }
+        }
+    }
+
+    .users-list::-webkit-scrollbar {
+        display: none;
+    }
+    
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    main {
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        .user-info {
+            font-size: 0.8rem;
+        }
+
+        .users-list > .user > i {
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+    }
+}
