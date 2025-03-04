@@ -52,8 +52,8 @@ npm install
 #### 4. Crie o arquivo .env na raiz do back-end com as seguintes variáveis:
 
 ```ini
-JWT_SECRET=seu_segredo_aqui
-MONGO_URL=sua_url_do_banco_aqui
+JWT_SECRET = "INSIRA_SUA_CHAVE_AQUI"
+MONGO_URL = "INSIRA_SUA_URL_DO_BANCO_AQUI"
 ```
 - MONGO_URL: Obtenha a URL de conexão do seu banco no MongoDB Atlas.
 
